@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            Maratón de Viajes
+        </title>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <link href="css/bootstrap.css" rel="stylesheet"/>
+        <!-- Bootstrap Date-Picker Plugin -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+        <link href="css/style.css" rel="stylesheet"/>
+        <link href="assets/favicon/favicon.png" rel="icon" type="image/x-icon"/>
+    </head>
+    <body class="modal-nigga">
+
+      <!-- AYUDA CAJITA -->
+      <button id="help-button" class="btn boton-ayuda">
+        <img src="assets/img/ayuda.png" alt="Help">
+      </button>
+      <div id="help-box" class="ayuda-contenedor">
+        <div class="box-header">
+          <button id="close-box" class="btn close-box">X</button>
+          <h2 class="m-0">Ayuda</h2>
+          <h5 class="m-0">Experto <img src="assets/img/flecha-ayuda.png" alt="help-"> Selecciona tu ayuda</h5>
+        </div>
+        <div class="box-body">
+          <select class="form-control" name="select">
+            <option value="value1" selected>Selecciona tu duda</option> 
+            <option value="value2">Duda</option>
+            <option value="value3">Duda</option>
+            <option value="value4">Duda</option>
+            <option value="value5">Duda</option>
+          </select>
+          <textarea name="" placeholder="Comentarios" id="" cols="30" rows="6" class="form-control w-100 mt-1"></textarea>
+          <span class="ter-color">Hasta 1000 caracteres</span>
+          <div class="input-container">
+            <input type="file" class="file-help" id="real-input">
+            <span class="file-info"></span>
+              <button class="browse-btn">
+                Adjuntar archivo
+              </button>
+          </div>
+
+          <button id="send-help" class="btn btn-hsbc-primary">
+            Enviar
+          </button>
+        </div>
+        <!-- GRACIAS POR TU DUDA CAJA -->
+        <div id="thx-box" class="thx-box">
+          <h2>Gracias</h2>
+          <p>TUS COMENTARIOS FUERON ENVIADOS EXITOSAMENTE</p>
+          <span>Recibirás un mail y en breve un experto atenderá tu duda.</span>
+          <button id="close-help-box" class="btn btn-hsbc-black">
+            Cerrar
+          </button>
+        </div>
+        <!-- GRACIAS POR TU DUDA CAJA -->
+      </div>
+      <!-- AYUDA CAJITA -->
+
+      <!-- TERMINA MECANICA -->
+      <header>
+        <nav class="navbar main-nav-hsbc navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="home.html">
+                <img src="assets/img/logo/logo__sobrenegro.png" class="logo-navbar-maraton d-desk-only-logo" alt="">
+                <img src="assets/img/logo/logo__sobrenegro.png" class="logo-navbar-maraton d-mov-only-logo" alt="">
+              </a>
+            </div>
+            <div class="name">
+              Hola, Aarón Zúñiga
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="home.html">Inicio</a></li>
+                <li><a href="mech-logged.html">Mecánica</a></li>
+                <li><a href="prize.html">Premios</a></li>
+                <li><a href="canje.html">Mi canje</a></li>
+                <li><a href="consultas.html" class="alert_men" style="padding-top: 10px;"><img src="assets/svg/alert.svg" width="30"><br> Mis consultas</a></li>
+                <!-- <li class="dropdown">
+                  <a href="#" class="dropdown-toggle alerts-not" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Notificaciones <span class="badge-alerts">99</span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </li> -->
+                <li><a href="index.html">Cerrar sesión</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      </header>
+
+       <div class="container first-container">
+        <!-- PREMIO LIVERPOOL -->
+        <div id="premio-liverpool" class="row">
+          <div class="col-sm-4">
+            <div class="detalle-img-zoom">
+              <img  src="assets/img/liverpool.jpg"  alt="">
+            </div>
+          </div>
+          <div class="col-sm-8 ">
+            <div class="datos-inputs">
+              <h3 class="">Datos de envío</h3>
+              <p>Introduce tus datos para recibir tu certificado.</p>
+              <i class="prim-color">
+                *Recuerda que te llegará un e-mail de confirmación y los pasos a seguir para utilizar tu certificado. Es importante revisar SPAM o Correo no deseado para validar la recepción del mismo. En caso de no recibirlo en máximo 72 hrs. Por favor comunícate al (55) 5809 7404 o envía un correo electrónico a maraton@programa-mas.com.mx
+              </i>
+              <hr>
+              <h4>Datos personales</h4>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Nombre</label>
+                    <!-- AL INPUT SE LE AGRREGA LA CLASE error O success PARA LA APARIENCIA -->
+                    <input class="error form-control" placeholder="Ej. Juan " type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Apellido paterno</label>
+                    <input class="success form-control" placeholder="Ej. Pérez" type="text">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Apellido materno</label>
+                    <input class="error form-control" placeholder="Ej. Pérez" type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Correo electrónico</label>
+                    <input class="success form-control" placeholder="mail@ejemplo.com" type="text">
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="input-confirm-button">
+                    <button data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#modal-datos" class="btn btn-hsbc-primary float-right">
+                      Confirmar datos
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <!-- TERMINA PREMIO LIVERPOOL -->
+        <!-- PREMIO VISA EXPERIENCIA-->
+        <div id="premio-visa" class="row">
+          <div class="col-sm-4">
+            <div class="detalle-img-zoom">
+              <img  src="assets/img/premio-simulado.jpg"  alt="">
+            </div>
+          </div>
+          <div class="col-sm-8 ">
+            <div class="datos-inputs">
+              <h3 class="">Datos de reservación</h3>
+              <i class="prim-color">
+                *Recuerda que puedes realizar un máximo de 2 canjes durante la promoción y que una vez realizada la reservación no habrá cambios ni devoluciones:
+              </i>
+              <span><img class="includes-prize" src="assets/img/tick.jpg" alt="">Incluye:</span>
+              <ul>
+                <li>Vuelo redondo nacional para 2 personas a Cancún</li>
+                <li>Hospedaje en hotel 5 estrellas por 3 días 2 noches en el hotel Occidental at Xcaret en plan todo incluido (Alimentos y bebidas) en habitación doble</li>
+                <li>Traslado Aeropuerto- Hotel – Aeropuerto</li>
+                <li>Paquete Xplor todo incluido para 2 personas (alimentos, entradas y transportación Hotel - Xplor - Hotel)</li>
+              </ul>
+              <hr>
+              <span><img class="includes-prize" src="assets/img/warning.jpg" alt="">No incluye:</span>
+              <ul>
+                <li class="ter-color">Impuestos incluidos, no incluye deportes motorizados, llamadas telefónicas y lavandería. Hora de entrada 3:00 PM hora de salida 12:00 Horas. La experiencia no incluye gastos u otros consumos no especificados en el momento de confirmación y aceptación de la experiencia.</li>
+              </ul>
+              <i>Hora de entrada 3:00 PM hora de salida 12:00 Horas. </i>
+              <h4 class="mt-1">Datos personales</h4>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Nombre</label>
+                    <input class="form-control" placeholder="Ej. Juan " type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Apellido paterno</label>
+                    <input class="form-control" placeholder="Ej. Pérez" type="text">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Apellido materno</label>
+                    <input class="form-control" placeholder="Ej. Pérez" type="text">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Correo electrónico</label>
+                    <input class="form-control" placeholder="mail@ejemplo.com" type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Teléfono</label>
+                    <input class="form-control" placeholder="5512345678" type="text">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Teléfono adicional</label>
+                    <input class="form-control" placeholder="5512345678" type="text">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Fecha de nacimiento</label>
+                    <div class=' date' id='datetimepicker1'>
+                        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                    </div>
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Fecha de reservación</label>
+                    <div class=' date' id='datetimepicker1'>
+                        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="input-confirm-button">
+                    <button data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#modal-datos" class="btn btn-hsbc-primary float-right">
+                      Confirmar datos
+                    </button>
+                  </div>
+                </div>
+              </div>
+                <h4>Datos de acompañante</h4>
+                <div class="row">
+                  <div class="col-sm-6 col-md-6">
+                    <div class="input-box">
+                      <label class=" ter-color" for="">Nombre</label>
+                      <input class="form-control" placeholder="Ej. Juan " type="text">
+                      <i class="prim-color">Error</i>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6">
+                    <div class="input-box">
+                      <label class=" ter-color" for="">Apellido paterno</label>
+                      <input class="form-control" placeholder="Ej. Pérez" type="text">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 col-md-6">
+                    <div class="input-box">
+                      <label class=" ter-color" for="">Apellido materno</label>
+                      <input class="form-control" placeholder="Ej. Pérez" type="text">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6">
+                    <div class="input-box">
+                      <label class=" ter-color" for="">Fecha de nacimiento</label>
+                      <div class=' date' id='datetimepicker1'>
+                          <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        <!-- TERMINA PREMIO VISA EXPERIENCIA-->
+        <!-- PREMIO  -->
+        <div id="premio" class="row">
+          <div class="col-sm-4">
+            <div class="detalle-img-zoom">
+              <img  src="assets/img/premio-simulado.jpg"  alt="">
+            </div>
+          </div>
+          <div class="col-sm-8 ">
+            <div class="datos-inputs">
+              <h3 class="">Datos de envío</h3>
+              <p>Introduce tus datos para la entrega de tu premio.</p>
+              <hr>
+              <h4>Datos personales</h4>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Nombre</label>
+                    <input class="form-control" placeholder="Ej. Juan " type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Apellido paterno</label>
+                    <input class="form-control" placeholder="Ej. Pérez" type="text">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Apellido materno</label>
+                    <input class="form-control" placeholder="Ej. Pérez" type="text">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Correo electrónico</label>
+                    <input class="form-control" placeholder="mail@ejemplo.com" type="text">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Teléfono</label>
+                    <input class="form-control" placeholder="5512345678" type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Teléfono adicional</label>
+                    <input class="form-control" placeholder="5512345678" type="text">
+                  </div>
+                </div>
+              </div>
+              <h4>Dirección de entrega</h4>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Calle</label>
+                    <input class="form-control" placeholder="Calle Madero" type="text">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Número exterior</label>
+                    <input class="form-control" placeholder="000" type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Número interior</label>
+                    <input class="form-control" placeholder="000" type="text">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Colónia</label>
+                    <input class="form-control" placeholder="Colónia" type="text">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Delegación/Municipio</label>
+                    <input class="form-control" placeholder="Del/Mun" type="text">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">C.P.</label>
+                    <input class="form-control" placeholder="000000" type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Ciudad</label>
+                    <input class="form-control" placeholder="Ciudad" type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Estado</label>
+                    <input class="form-control" placeholder="Estado" type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Referencias</label>
+                    <textarea name="" id="" cols="30" rows="2" class="w-100 form-control"></textarea>
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="input-confirm-button">
+                    <button data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#modal-datos" class="btn btn-hsbc-primary float-right">
+                      Confirmar datos
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <!-- TERMINA PREMIO  -->
+        <!-- PREMIO FOTO-2 -->
+        <div id="premio-foto-2" class="row">
+          <div class="col-sm-4">
+            <div class="detalle-img-zoom">
+              <img  src="assets/img/foto-2.jpg"  alt="">
+            </div>
+          </div>
+          <div class="col-sm-8 ">
+            <div class="datos-inputs">
+              <h3 class="">Datos de envío</h3>
+              <p>Introduce tus datos para recibir tu certificado.</p>
+              <i class="prim-color">
+                *Recuerda que te llegará un e-mail de confirmación y los pasos a seguir para utilizar tu certificado. Es importante revisar SPAM o Correo no deseado para validar la recepción del mismo. En caso de no recibirlo en máximo 72 hrs. Por favor comunícate al (55) 5809 7404 o envía un correo electrónico a maraton@programa-mas.com.mx
+              </i>
+              <hr>
+              <h4>Datos personales</h4>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Nombre</label>
+                    <input class="form-control" placeholder="Ej. Juan " type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Apellido paterno</label>
+                    <input class="form-control" placeholder="Ej. Pérez" type="text">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Apellido materno</label>
+                    <input class="form-control" placeholder="Ej. Pérez" type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Correo electrónico</label>
+                    <input class="form-control" placeholder="mail@ejemplo.com" type="text">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Teléfono</label>
+                    <input class="form-control" placeholder="5512345678" type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Teléfono adicional</label>
+                    <input class="form-control" placeholder="5512345678" type="text">
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="input-confirm-button">
+                    <button data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#modal-datos" class="btn btn-hsbc-primary float-right">
+                      Confirmar datos
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <!-- TERMINA PREMIO FOTO-2 -->
+        <!-- PREMIO PRICE TRAVEL -->
+        <div id="premio-price-travel" class="row">
+          <div class="col-sm-4">
+            <div class="detalle-img-zoom">
+              <img  src="assets/img/price-travel.jpg"  alt="">
+            </div>
+          </div>
+          <div class="col-sm-8 ">
+            <div class="datos-inputs">
+              <h3 class="">Datos de envío</h3>
+              <p>Introduce tus datos para recibir tu certificado de viaje.</p>
+              <i class="prim-color">
+                *Recuerda que te llegará un e-mail de confirmación y los pasos a seguir para canjear tu certificado de viaje.
+              </i>
+              <hr>
+              <h4>Datos personales</h4>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Nombre</label>
+                    <input class="form-control" placeholder="Ej. Juan " type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Apellido paterno</label>
+                    <input class="form-control" placeholder="Ej. Pérez" type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Apellido materno</label>
+                    <input class="form-control" placeholder="Ej. Pérez" type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Correo electrónico</label>
+                    <input class="form-control" placeholder="mail@ejemplo.com" type="text">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Teléfono</label>
+                    <input class="form-control" placeholder="5512345678" type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Teléfono adicional</label>
+                    <input class="form-control" placeholder="5512345678" type="text">
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="input-confirm-button">
+                    <button data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#modal-datos" class="btn btn-hsbc-primary float-right">
+                      Confirmar datos
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <!-- TERMINA PREMIO PRICE TRAVEL -->
+        <!-- PREMIO CLUB PREMIER -->
+        <div id="premio-club-premier" class="row">
+          <div class="col-sm-4">
+            <div class="detalle-img-zoom">
+              <img  src="assets/img/club-premier.jpg"  alt="">
+            </div>
+          </div>
+          <div class="col-sm-8 ">
+            <div class="datos-inputs">
+              <h3 class="">Número de Socio Club Premier</h3>
+              <p>Introduce tus datos para la entrega de tu premio.</p>
+              <hr>
+              <h4>Datos personales</h4>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Nombre</label>
+                    <input class="form-control" placeholder="Ej. Juan " type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Apellido paterno</label>
+                    <input class="form-control" placeholder="Ej. Pérez" type="text">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Apellido materno</label>
+                    <input class="form-control" placeholder="Ej. Pérez" type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Correo electrónico</label>
+                    <input class="form-control" placeholder="mail@ejemplo.com" type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Teléfono</label>
+                    <input class="form-control" placeholder="5512345678" type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Teléfono adicional</label>
+                    <input class="form-control" placeholder="5512345678" type="text">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6  col-md-8">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Ingresa tu número de socio de Club Premier.</label>
+                    <input class="form-control" placeholder="0000000000000" type="number">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+                <div class="col-sm-6  col-md-8">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Confirma tu número de socio de Club Premier.</label>
+                    <input class="form-control" placeholder="0000000000000" type="number">
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <h4 class="premier-suscribe">Sí aún no estás inscrito en Club Premier, regístrate sin costo en: <br>
+                    <a href="www.clubpremier.com/maratonhsbc" class="prim-color">www.clubpremier.com/maratonhsbc</a>
+                  </h4>
+                    <hr>
+                    <span class="premier-terms ter-color"><b>Términos y condiciones.</b> <br>
+                      Para realizar transferencias es necesario estar inscrito a Club Premier. Las personas que no sean Socios Club Premier se podrán inscribir gratis en <a href="www.clubpremier.com/maratonhsbc" class="prim-color">www.clubpremier.com/maratonhsbc</a> Las transferencias solo aplican en cuentas de Titular a Titular, es decir deberá ser la misma persona la titular de la cuenta HSBC como la titular de la cuenta Club Premier. Promoción válida únicamente para la República Mexicana, es decir, dentro de los Estados Unidos Mexicanos. No aplica para cuentas del programa Club Premier Corporativo. No participan quienes tengan cuentas Club Premier suspendidas o canceladas. No es acumulable con otras promociones. El número de bolsas de Puntos Premier está limitado de acuerdo a la distribución previamente mencionada, por lo que se otorgarán hasta agotar existencia de las mismas. Una vez canjeados los kilómetros del Maratón de Premios de HSBC por Puntos Premier, aplicarán las reglas vigentes del programa Club Premier respecto a los Puntos Premier. El canje de los kilómetros del Maratón de Premios de HSBC por Puntos Premier es definitivo y no puede ser cancelada ni reembolsable. Los Puntos Premier adquiridos podrán ser utilizados de conformidad a las reglas de Club Premier.
+                    </span>
+                </div>
+                <div class="col-sm-12">
+                  <div class="input-confirm-button">
+                    <button data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#modal-datos" class="btn btn-hsbc-primary float-right">
+                      Confirmar datos
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <!-- TERMINA PREMIO CLUB PREMIER -->
+        <!-- PREMIO CINEPOLIS -->
+        <div id="premio" class="row">
+          <div class="col-sm-4">
+            <div class="detalle-img-zoom">
+              <img  src="assets/img/cinepolis.jpg"  alt="">
+            </div>
+          </div>
+          <div class="col-sm-8 ">
+            <div class="datos-inputs">
+              <h3 class="">Datos de envío</h3>
+              <p>Introduce tus datos para la entrega de tu premio.</p>
+              <hr>
+              <h4>Datos personales</h4>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Nombre</label>
+                    <input class="form-control" placeholder="Ej. Juan " type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Apellido paterno</label>
+                    <input class="form-control" placeholder="Ej. Pérez" type="text">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Apellido materno</label>
+                    <input class="form-control" placeholder="Ej. Pérez" type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Correo electrónico</label>
+                    <input class="form-control" placeholder="mail@ejemplo.com" type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Teléfono</label>
+                    <input class="form-control" placeholder="5512345678" type="text">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Teléfono adicional</label>
+                    <input class="form-control" placeholder="5512345678" type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Fecha de nacimiento</label>
+                    <div class=' date' id='datetimepicker1'>
+                        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Calendario de fechas</label>
+                    <div class=' date' id='datetimepicker1'>
+                        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+                
+              <h4>Dirección de entrega</h4>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Calle</label>
+                    <input class="form-control" placeholder="Calle Madero" type="text">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Número exterior</label>
+                    <input class="form-control" placeholder="000" type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Número interior</label>
+                    <input class="form-control" placeholder="000" type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Colónia</label>
+                    <input class="form-control" placeholder="Colónia" type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Delegación/Municipio</label>
+                    <input class="form-control" placeholder="Del/Mun" type="text">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">C.P.</label>
+                    <input class="form-control" placeholder="000000" type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Ciudad</label>
+                    <input class="form-control" placeholder="Ciudad" type="text">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Estado</label>
+                    <input class="form-control" placeholder="Estado" type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Referencias</label>
+                    <textarea name="" id="" cols="30" rows="2" class="w-100 form-control"></textarea>
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="input-confirm-button">
+                    <button data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#modal-datos" class="btn btn-hsbc-primary float-right">
+                      Confirmar datos
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <!-- TERMINA PREMIO CINEPOLIS -->
+        <!-- PREMIO NOCHES HOTEL -->
+        <div id="premio-noches-hotel" class="row">
+          <div class="col-sm-4">
+            <div class="detalle-img-zoom">
+              <img  src="assets/img/premio-simulado.jpg"  alt="">
+            </div>
+          </div>
+          <div class="col-sm-8 ">
+            <div class="datos-inputs">
+              <h3 class="">Datos de reservación</h3>
+              <p>Introduce tus datos para la entrega de tu premio.</p>
+              <i class="prim-color">
+                *Recuerda que te llegará un e-mail de confirmación de tus noches de hotel. Sujetas a disponibilidad y confirmación del hotel. Fechas que no participan en la promoción: Del 1 al 4 de febrero de 2019, del 15 al 18 de marzo de 2019, del 15 al 24 de abril de 2019, del 29 de abril al 1 de mayo de 2019, del 4 al 5 de mayo de 2019.
+              </i>
+              <hr>
+              <h4>Datos personales</h4>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Nombre</label>
+                    <input class="form-control" placeholder="Ej. Juan " type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Apellido paterno</label>
+                    <input class="form-control" placeholder="Ej. Pérez" type="text">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Apellido materno</label>
+                    <input class="form-control" placeholder="Ej. Pérez" type="text">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Correo electrónico</label>
+                    <input class="form-control" placeholder="mail@ejemplo.com" type="text">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Teléfono</label>
+                    <input class="form-control" placeholder="5512345678" type="text">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Teléfono adicional</label>
+                    <input class="form-control" placeholder="5512345678" type="text">
+                      <i class="prim-color">Error</i>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="input-box">
+                    <label class=" ter-color" for="">Fecha de nacimiento</label>
+                    <div class=' date' id='datetimepicker1'>
+                        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="input-confirm-button">
+                    <button data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#modal-datos" class="btn btn-hsbc-primary float-right">
+                      Confirmar datos
+                    </button>
+                  </div>
+                </div>
+              </div>
+                <h4>Datos de acompañante</h4>
+                <div class="row">
+                  <div class="col-sm-6 col-md-6">
+                    <div class="input-box">
+                      <label class=" ter-color" for="">Nombre</label>
+                      <input class="error form-control" placeholder="Ej. Juan " type="text">
+                      <i class="prim-color">Error</i>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6">
+                    <div class="input-box">
+                      <label class=" ter-color" for="">Apellido paterno</label>
+                      <input class="error form-control" placeholder="Ej. Pérez" type="text">
+                      <i class="prim-color">Error</i>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 col-md-6">
+                    <div class="input-box">
+                      <label class=" ter-color" for="">Apellido materno</label>
+                      <input class="success form-control" placeholder="Ej. Pérez" type="text">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6">
+                    <div class="input-box">
+                      <label class=" ter-color" for="">Fecha de nacimiento</label>
+                      <div class=' date' id='datetimepicker1'>
+                          <input class="success form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        <!-- TERMINA PREMIO NOCHES HOTEL -->
+       </div>
+        <footer class="footer">
+          <div class="container"> 
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="footer-info">
+                  <div class="footer-info-text">
+                    <p>
+                    Consulta requisitos, términos y condiciones de la promoción llamando al (55) 5809 7404 o en www.hsbc.com.mx/maraton <br>
+                    Consulta requisitos, términos, condiciones de contratación y comisiones en www.hsbc.com.mx/tarjetas <br>
+                    Vigencia de la promoción del 15 de julio al 30 de septiembre de 2019. 
+                  </p>
+                  <p>
+                    HSBC y sus logotipos son marcas registradas en México.
+                  </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="footer-logos-der footer-logos-der--hsbc">
+                  <a class="hsbc-anch" href="#"><img src="assets/img/logo/logo-hsbc.png" class="logo-hsbc-footer" alt=""></a>
+                </div>
+              </div>
+              <div class="col-sm-8">
+                <div class="footer-logos-der">
+                  <a class="logo1" target="blank" href="https://www.clubpremier.com/mx/bienvenido/"><img class="logo-premier" src="assets/img/logo/premier.png" alt=""> </a>
+                  <a class="logo2" target="blank" href="https://www.steren.com.mx"><img class="logo-steren" src="assets/img/logo/steren.png" alt=""></a>
+                  <a class="logo3" target="blank" href="https://www.hsbc.com.mx/tarjetas-de-credito/control-total/"><img class="logo-app" src="assets/svg/ct-footer.svg" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <hr>
+                <div class="footer-links">
+                  <span>HSBC</span>
+                  <div class="float-right">
+                    <a class="text-uppercase" href="mech-logged.html">Mecánica</a> · 
+                    <a class="text-uppercase" href="faqs-logged.html">FAQ's</a> · 
+                    <a class="text-uppercase" href="terminos-logged.html">Términos y condiciones</a> · 
+                    <a class="text-uppercase" href="terminos-visa-logged.html">TyC Visa</a> · 
+                    <a class="text-uppercase" href="terminos-cp-logged.html">TyC CP</a> · 
+                    <a class="text-uppercase" target="blank" href="https://www.hsbc.com.mx/tarjetas-de-credito/control-total/">App HSBC Control Total</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+
+
+        <!-- The modal CANJE -->
+        <div class="modal fade modal-terminos modal-canje" id="modal-datos" tabindex="-1" role="dialog" aria-labelledby="modalLabelLarge" aria-hidden="true">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+
+              <!-- <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="modalLabelLarge">Modal Title</h4>
+              </div> -->
+
+              <div class="modal-body text-center">
+                <h2>
+                  Datos guardados corréctamente
+                </h2>
+                <ul class="text-left">
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                  <li>Optio consectetur incidunt quasi rerum cum fugiat nulla aperiam sunt repellendus ipsum.</li>
+                  <li>Porro ex, consequuntur! Mollitia saepe distinctio dolorem, debitis ratione quos!</li>
+                </ul>
+                <button onclick="location.href='home.html'" class="  accept-terms btn btn-hsbc-primary">
+                  Seguir canjeando
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- JS -->
+        <script type="text/javascript" src="js/jquery.min.js">
+        </script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js">
+        </script>
+         <!-- CHATBOT -->
+        <script>
+            $( "#help-button" ).click(function() {
+              $( "#help-box" ).slideToggle( "fast", function() {
+                // Animation complete.
+              });
+            });
+
+
+            $( "#close-box" ).click(function() {
+              $( "#help-box" ).slideToggle( "fast", function() {
+                // Animation complete.
+              });
+            });
+        </script>
+        <script>
+          const uploadButton = document.querySelector('.browse-btn');
+          const fileInfo = document.querySelector('.file-info');
+          const realInput = document.getElementById('real-input');
+
+          uploadButton.addEventListener('click', (e) => {
+            realInput.click();
+          });
+
+          realInput.addEventListener('change', () => {
+            const name = realInput.value.split(/\\|\//).pop();
+            const truncated = name.length > 20 
+              ? name.substr(name.length - 20) 
+              : name;
+            
+            fileInfo.innerHTML = truncated;
+          });
+        </script>
+        <script>
+            $( "#send-help" ).click(function() {
+              $( "#thx-box" ).fadeToggle( "fast", function() {
+                // Animation complete.
+              });
+            });
+
+
+            $( "#close-help-box" ).click(function() {
+              $( "#help-box" ).slideToggle( "fast", function() {
+                // Animation complete.
+              });
+            });
+        </script>
+        <!-- CHATBOT -->
+        <script>
+            $(document).ready(function(){
+              var date_input=$('input[name="date"]'); //our date input has the name "date"
+              var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "html";
+              var options={
+                format: 'mm/dd/yyyy',
+                container: container,
+                todayHighlight: true,
+                autoclose: true,
+              };
+              date_input.datepicker(options);
+            })
+        </script>
+    </body>
+</html>

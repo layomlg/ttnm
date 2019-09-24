@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            Maratón de Viajes
+        </title>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <link href="css/bootstrap.css" rel="stylesheet"/>
+        <!-- Bootstrap Date-Picker Plugin -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+        <link href="css/style.css" rel="stylesheet"/>
+        <link href="assets/favicon/favicon.png" rel="icon" type="image/x-icon"/>
+    </head>
+    <body class="index-body">
+
+      <!-- TERMINA MECANICA -->
+       <header>
+           
+       </header>
+       <div class="container container-registro">
+        <div class="row">
+          <div class="col-sm-6">
+
+             <div class="legales-button-back register-back">
+            <button onclick="window.history.go(-1); return false;" class="button-chevron btn-return-detail btn-return-detail--outside btn">
+              <span class="chevron left"></span>
+            </button>
+             </div>
+            <div class="registro-images">
+              <img src="assets/img/logo/logo-maraton.png" class="registro-logo " alt="">
+              <img src="assets/img/registro-img.png" class="registro-img " alt="">
+            </div>
+            <button id="down-reg" class="anim-chev button-chevron btn">
+              <span class="chevron bottom"></span>
+            </button>
+          </div>
+          <div class="col-sm-6">
+            <div id="registro-box" class="row registro-box">
+              <div class="col-sm-12">
+                <h3 class="text-white">Realiza tu registro y participa</h3>
+              </div>
+              <div class="col-sm-12">
+                <label class="ter-color label-input-registro" for="">*Captura los 16 dígitos de tu tarjeta de crédito HSBC. Recuerda que si tienes 2 o más tarjetas solo deberás registrar una.</label>
+                <input type="text" placeholder="0000-0000-0000-0000" class="form-control input-registro">
+                <label class="ter-color label-input-registro" for="">*Confirma los 16 dígitos de tu tarjeta de crédito HSBC titular</label>
+                <input type="text" placeholder="0000-0000-0000-0000" class="form-control error input-registro">
+                <label class="ter-color label-input-registro" for="">*Nombre</label>
+                <input type="text" placeholder="Nombre o nombres" class="form-control input-registro">
+              </div>
+              <div class="col-sm-6">
+                <label class="ter-color label-input-registro" for="">*Apellido paterno</label>
+                <input type="text" placeholder="Apellido " class="form-control success input-registro">
+              </div>
+              <div class="col-sm-6">
+                <label class="ter-color label-input-registro" for="">*Apellido materno</label>
+                <input type="text" placeholder="Apellido " class="form-control input-registro">
+              </div>
+              <div class="col-sm-6">
+                <label class="ter-color label-input-registro" for="">*Email</label>
+                <input type="text" placeholder="Ejemplo@mail.com" class="form-control input-registro">
+              </div>
+              <div class="col-sm-6">
+                <label class="ter-color label-input-registro" for="">*Confirmar email</label>
+                <input type="text" placeholder="Ejemplo@mail.com" class="form-control input-registro">
+              </div>
+              <div class="col-sm-6">
+                <label class="ter-color label-input-registro" for="">*Teléfono celular</label>
+                <input type="text" placeholder="5512345678" class="form-control input-registro">
+              </div>
+              <div class="col-sm-6">
+                <label class="ter-color label-input-registro">
+                  *Fecha de nacimiento
+                </label>
+                <div class=' date' id='datetimepicker1'>
+                    <input class="form-control input-registro" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <label class="ter-color label-input-registro" for="">*Contraseña</label>
+                <input type="text" placeholder="contraseña" class="form-control input-registro">
+              </div>
+              <div class="col-sm-6">
+                <label class="ter-color label-input-registro" for="">*Confirma contraseña</label>
+                <input type="text" placeholder="contraseña" class="form-control input-registro">
+              </div>
+              <div class="col-sm-12">
+                <ul class="registro-pass-list ter-color">
+                  <li>
+                    Lista de caracteristicas para la contraseña
+                  </li>
+                </ul>
+                <hr class="hr-registro">
+              </div>
+              <div class="col-sm-6">
+                <div class="check-box-registro">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class=" ter-color label-input-registro terminos check-reg" for="defaultCheck1">
+                    Acepto recibir información sobre el seguimiento a la promoción
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="check-box-registro">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                  <label class=" ter-color label-input-registro terminos check-reg" for="defaultCheck2">
+                    He leido y acepto los <a href="terminos.html">términos y condiciones</a>, así como el <a href="privacidad.html">aviso de privacidad</a>.
+                  </label>
+                </div>
+              </div>
+              <div class="col-xs-12">
+                <div class="registro-boton">
+                  <button data-toggle="modal" data-target="#exampleModal3" class="btn m-a btn-hsbc-primary">
+                    <i>Registrarme</i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+        <footer class="footer">
+          <div class="container"> 
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="footer-info">
+                  <div class="footer-info-text">
+                    <p>
+                    Consulta requisitos, términos y condiciones de la promoción llamando al (55) 5809 7404 o en www.hsbc.com.mx/maraton <br>
+                    Consulta requisitos, términos, condiciones de contratación y comisiones en www.hsbc.com.mx/tarjetas <br>
+                    Vigencia de la promoción del 15 de julio al 30 de septiembre de 2019. 
+                  </p>
+                  <p>
+                    HSBC y sus logotipos son marcas registradas en México.
+                  </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="footer-logos-der footer-logos-der--hsbc">
+                  <a class="hsbc-anch" href="#"><img src="assets/img/logo/logo-hsbc.png" class="logo-hsbc-footer" alt=""></a>
+                </div>
+              </div>
+              <div class="col-sm-8">
+                <div class="footer-logos-der">
+                  <a class="logo1" target="blank" href="https://www.clubpremier.com/mx/bienvenido/"><img class="logo-premier" src="assets/img/logo/premier.png" alt=""> </a>
+                  <a class="logo2" target="blank" href="https://www.steren.com.mx"><img class="logo-steren" src="assets/img/logo/steren.png" alt=""></a>
+                  <a class="logo3" target="blank" href="https://www.hsbc.com.mx/tarjetas-de-credito/control-total/"><img class="logo-app" src="assets/svg/ct-footer.svg" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <hr>
+                <div class="footer-links">
+                  <span>HSBC</span>
+                  <div class="float-right">
+                    <a class="text-uppercase" href="mech.html">Mecánica</a> · 
+                    <a class="text-uppercase" href="faqs.html">FAQ's</a> · 
+                    <a class="text-uppercase" href="terminos.html">Términos y condiciones</a> · 
+                    <a class="text-uppercase" href="terminos-visa.html">TyC Visa</a> · 
+                    <a class="text-uppercase" href="terminos-cp.html">TyC CP</a> · 
+                    <a class="text-uppercase" target="blank" href="https://www.hsbc.com.mx/tarjetas-de-credito/control-total/">App HSBC Control Total</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- MODAL -->
+        <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+          <div class="modal-dialog modal-dialog--index" role="document">
+            <div class="modal-content modal-index">
+                <button type="button" class="close close-button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+
+              <!-- <div class="modal-header">
+                <h5 class="modal-title" id="exampleModal3Label">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div> -->
+              <div class="modal-body text-center">
+                <img src="assets/img/logo/logo__sobrenegro.png" alt="" class="logo-modal">
+                <div id="modal-registro-success" class="">
+                  <img src="assets/img/alert.png" alt="">
+                  <h4 class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis nobis deleniti vel assumenda voluptatum enim amet praesentium consequuntur consequatur.</h4>
+                </div>
+                <div id="modal-registro-alert" class="">
+                  <img src="assets/img/error.png" alt="">
+                  <h4 class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis nobis deleniti vel assumenda voluptatum enim amet praesentium consequuntur consequatur.</h4>
+                </div>
+                <div id="modal-registro-error" class="">
+                  <img src="assets/img/success.png" alt="">
+                  <h4 class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis nobis deleniti vel assumenda voluptatum enim amet praesentium consequuntur consequatur.</h4>
+                </div>
+
+              </div>
+              <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div> -->
+
+            </div>
+          </div>
+        </div>
+        <!-- JS -->
+        <script type="text/javascript" src="js/jquery.min.js">
+        </script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js">
+        </script>
+        <!-- ANCHOR SMOOTH SCROLL -->
+        <script>
+          $('#down-reg').click(function(){
+              $('html, body').animate({
+                  scrollTop: $( '#registro-box' ).offset().top + 5
+              }, 500);
+              return false;
+          });
+        </script>
+        <!-- ANCHOR SMOOTH SCROLL -->
+
+          <script>
+              $(document).ready(function(){
+                var date_input=$('input[name="date"]'); //our date input has the name "date"
+                var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+                var options={
+                  format: 'mm/dd/yyyy',
+                  container: container,
+                  todayHighlight: true,
+                  autoclose: true,
+                };
+                date_input.datepicker(options);
+              })
+          </script>
+    </body>
+</html>

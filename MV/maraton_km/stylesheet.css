@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Univers Next Pro';
+    src: url('UniversNextPro-Regular.eot');
+    src: url('UniversNextPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('UniversNextPro-Regular.woff2') format('woff2'),
+        url('UniversNextPro-Regular.woff') format('woff'),
+        url('UniversNextPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'universbold';
+    src: url('unvr65w-webfont.woff2') format('woff2'),
+         url('unvr65w-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
