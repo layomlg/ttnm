@@ -105,7 +105,7 @@
       <!-- CARRITO -->
       <div class="carrito-container">
         <div class="row">
-          <div class="col-sm-7">
+          <div class="col-sm-12">
             <h3 class="title-product">
               Productos
             </h3>
@@ -121,7 +121,7 @@
                 <h5>
                   500 Pts
                 </h5>
-                <p>Color: </p>
+                
                 <div class="prod-info-qnt">
                   <span>Cantidad: </span>
                   <div class="plus-box">
@@ -155,7 +155,75 @@
                 <h5>
                   500 Pts
                 </h5>
-                <p>Color: </p>
+                
+                <div class="prod-info-qnt">
+                  <span>Cantidad: </span>
+                  <div class="plus-box">
+                    <!-- Change the `data-field` of buttons and `name` of input field's for multiple plus minus buttons-->
+                    <div class="input-group plus-minus-input">
+                      <div class="input-group-button">
+                        <button type="button" class=" btn mr-2 button hollow circle" data-quantity="minus" data-field="item5">
+                          -
+                        </button>
+                      </div>
+                      <input class="input-group-field" type="number" name="item5" value="3">
+                      <div class="input-group-button">
+                        <button type="button" class=" btn ml-2 button hollow circle" data-quantity="plus" data-field="item5">
+                          +
+                        </button>
+                      </div>
+                    </div>
+                    <!--MINUS PLUS END-->
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="cart-producto">
+              <button class="btn eliminar-item">X</button>
+              <img src="images/shop/sh-4/2.jpg" class="cart-prod-img" alt="">
+              <div class="cart-prod-info">
+                <h5 class="prod-name">
+                  Nombre del producto
+                </h5>
+                <h5>
+                  500 Pts
+                </h5>
+                
+                <div class="prod-info-qnt">
+                  <span>Cantidad: </span>
+                  <div class="plus-box">
+                    <!-- Change the `data-field` of buttons and `name` of input field's for multiple plus minus buttons-->
+                    <div class="input-group plus-minus-input">
+                      <div class="input-group-button">
+                        <button type="button" class=" btn mr-2 button hollow circle" data-quantity="minus" data-field="item5">
+                          -
+                        </button>
+                      </div>
+                      <input class="input-group-field" type="number" name="item5" value="3">
+                      <div class="input-group-button">
+                        <button type="button" class=" btn ml-2 button hollow circle" data-quantity="plus" data-field="item5">
+                          +
+                        </button>
+                      </div>
+                    </div>
+                    <!--MINUS PLUS END-->
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="cart-producto">
+              <button class="btn eliminar-item">X</button>
+              <img src="images/shop/sh-4/2.jpg" class="cart-prod-img" alt="">
+              <div class="cart-prod-info">
+                <h5 class="prod-name">
+                  Nombre del producto
+                </h5>
+                <h5>
+                  500 Pts
+                </h5>
+                
                 <div class="prod-info-qnt">
                   <span>Cantidad: </span>
                   <div class="plus-box">
@@ -180,96 +248,111 @@
 
             </div>
           </div>
-          <div class="col-sm-5">
+          <div class="col-sm-12">
+            <hr class="hr-item-cart">
+            
             <h3 class="title-product">
               Información de canje
             </h3>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-6">
+                        <h4>Total de artículos</h4>
+                      </div>
+                      <div class="col-6">
+                        <h4 class="text-right">10</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <h4>Subtotal de puntos</h4>
+                  </div>
+                  <div class="col-6">
+                    <h4 class="text-right">5,000 Pts</h4>
+                  </div>
+                  <div class="col-12">
+                    <div>
+                      <p class="chkbx clearfix">
+                        <input type="checkbox" name="check-meses" id="check-meses">
+                        <label for="check-meses">6 meses sin intereses</label>
+                      </p>
+                    </div>
+                    <div>
+                      <p class="chkbx clearfix">
+                        <input type="checkbox" name="check-tipo-pago" id="check-tipo-pago">
+                        <label for="check-tipo-pago">Pago con puntos</label>
+                      </p>
+                    </div>
+                    <div>
+                      <p class="chkbx clearfix">
+                        <input type="checkbox" name="check-tipo-pago2" id="check-tipo-pago2">
+                        <label for="check-tipo-pago2">Pago combinado</label>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cart-range">
+                      <label for="customRange1">Conversión de puntos</label>
+                      <input type="range" class="custom-range" id="customRange1">
+                    </div>
+                    <div class="text-right">
+                      <h5>00,000 Pts</h5>
+                      <h5>$ 100 M.N.</h5>
+                    </div>
+                    <div class="form-group cupon-cart m-0">
+                      <label for="formGroupExampleInput">Pago en pesos</label>
+                      <input type="text" class="form-control text-center input-disabled-cupon" disabled="" id="formGroupExampleInput" placeholder="$771 M.N.">
+                    </div>
+
+                  </div>
+                </div>
+              </div><div class="col-sm-4">
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group cupon-cart">
+                    <label for="formGroupExampleInput">Si adquirio un cupón, ingréselo</label>
+                    <div class="input-cupon">
+                      <button class="btn-principal btn-hsbc-primary--cupon">
+                        Canjear
+                      </button>
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Cupón">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <h4>Total en puntos</h4>
+                </div>
+                <div class="col-6">
+                  <h4 class="text-right">5,000 Pts</h4>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-6">
+                      <h4>Total en pesos</h4>
+                    </div>
+                    <div class="col-6">
+                      <h4 class="text-right">$771.00 M.N.</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <h4>Total en cupón</h4>
+                </div>
+                <div class="col-6">
+                  <h4 class="text-right">0 Pts</h4>
+                </div>
+              </div>
+              </div>
+            </div>
             <hr class="hr-item-cart">
             <div class="row">
-              <div class="col-12">
-                <div class="row">
-                  <div class="col-6">
-                    <h4>Total de artículos</h4>
-                  </div>
-                  <div class="col-6">
-                    <h4 class="text-right">10</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6">
-                <h4>Subtotal de puntos</h4>
-              </div>
-              <div class="col-6">
-                <h4 class="text-right">5,000 Pts</h4>
-              </div>
-              <div class="col-12">
-                <div>
-                  <p class="chkbx clearfix">
-                    <input type="checkbox" name="check-tipo-pago" id="check-tipo-pago">
-                    <label for="check-tipo-pago">Pago con puntos</label>
-                  </p>
-                </div>
-                <div>
-                  <p class="chkbx clearfix">
-                    <input type="checkbox" name="check-tipo-pago2" id="check-tipo-pago2">
-                    <label for="check-tipo-pago2">Pago combinado</label>
-                  </p>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="cart-range">
-                  <label for="customRange1">Pago en puntos</label>
-                  <input type="range" class="custom-range" id="customRange1">
-                </div>
-                <div class="text-right">
-                  <h5>00,000 Pts</h5>
-                  <h5>$ 100 M.N.</h5>
-                </div>
-                <div class="form-group cupon-cart m-0">
-                  <label for="formGroupExampleInput">Pago en pesos</label>
-                  <input type="text" class="form-control text-center input-disabled-cupon" disabled="" id="formGroupExampleInput" placeholder="$771 M.N.">
-                </div>
-                <div>
-                  <p class="chkbx clearfix">
-                    <input type="checkbox" name="check-meses" id="check-meses">
-                    <label for="check-meses" style="color:#f63440;font-weight: bold;">6 meses sin intereses</label>
-                  </p>
-                </div>
-
-              </div>
-              <div class="col-12">
-                <div class="form-group cupon-cart">
-                  <label for="formGroupExampleInput">Si adquiriste un cupón, ingrésalo</label>
-                  <div class="input-cupon">
-                    <button class="btn-principal btn-hsbc-primary--cupon">
-                      Aplicar
-                    </button>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingresa tu cupón">
-                  </div>
-                </div>
-              </div>
-              <div class="col-6">
-                <h4>Total en puntos</h4>
-              </div>
-              <div class="col-6">
-                <h4 class="text-right">5,000 Pts</h4>
-              </div>
-              <div class="col-12">
-                <div class="row">
-                  <div class="col-6">
-                    <h4>Total en pesos</h4>
-                  </div>
-                  <div class="col-6">
-                    <h4 class="text-right">$771.00 M.N.</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6">
-                <h4>Total en cupón</h4>
-              </div>
-              <div class="col-6">
-                <h4 class="text-right">0 Pts</h4>
-              </div>
               <div class="col-12 text-right">
                 <a  class="btn-principal cart-pagar" href="cart2-address.html">
                   Canjear
@@ -361,47 +444,31 @@
         <!-- Panel oculto -->
         <div id="panel" style="display: none;">
           <div class="contenidoDudas">
-            <p>
-              <span class="rojoTexto">+</span>
-              <span id="Label6" style="color: #333;">CENTRO DE CONTACTO</span><span class="rojoTexto"> HSBC</span>
-            </p>
-            <p>...........................................................................................</p>
-            <span class="glyphicon glyphicon-earphone rojoTexto"></span>
-            <p>
-              <span>
-                <span id="Label8" class="rojoTexto">Centro de Servicio del Programa</span></span> HSBC <span>
-              <span id="Label7" class="rojoTexto">+PUNTOS</span></span>
-            </p>
-            <p>
-              <span id="Label9" style="color: #333;">Ciudad de México y Área Metropolitana 5809-7404</span>
-            </p>
-            <p>
-              <span id="Label10" style="color: #333;">Lada  01 55 58 09 74 04</span>
-            </p>
-            <p>
-              <span id="Label11" style="color: #333;">Horario de Atención</span>
-            </p>
-            <p>
-              <span id="Label11_1" style="position: relative; left: 35px; color: #333;">Lunes a Viernes de 8:00 hrs a 20:00 hrs.</span>
-            </p>
-            <p>
-              <span id="Label11_2" style="position: relative; left: 35px; color: #333;">Sábados y Domingos de 9:00 hrs a 18:00 hrs.</span>
-            </p>
-            <p>...........................................................................................</p>
-            <span class="glyphicon glyphicon-earphone rojoTexto"></span>
-            <p>
-              <span>
-                <span id="Label12" class="rojoTexto">Centro de Contacto</span></span> HSBC
-            </p>
-            <p>
-              <span id="Label14" style="color: #333;">Ciudad de México y Área Metropolitana 5721-3390</span>
-            </p>
-            <p>
-              <span id="Label15" style="color: #333;">Desde el Interior 01 55 57 21 33 90</span>
-            </p>
-            <p>
-              <span id="Label16" style="color: #333;">Horario de Atención 24 hrs.</span>
-            </p>
+            <div class="row atender">
+              <div class="col-sm-12">
+                <h3>Bienvenido</h3>
+              </div>
+               <div class="col-sm-12">
+               <p>Si tienes alguna duda, ingresala en el campo de texto y con gusto te atenderemos</p>
+                <textarea></textarea>
+                <a href="#" class="btn-principal" onclick="atencion()">Enviar</a>
+              </div>
+              <div class="col-sm-12">
+               <p style="text-align: center">Ó</p>
+              </div>
+              <div class="col-sm-12">
+               <p>Presiona el botón para que uno de nuestros asesores se comunique contigo</p>
+                <a href="#" class="btn-principal" onclick="atencion()">Solicitar llamada de asesor</a>
+              </div>
+            </div>
+            <div class="row respuesta">
+              <div class="col-sm-12">
+                <h3>Muchas gracias por ponerte en contacto</h3>
+              </div>
+               <div class="col-sm-12">
+               <p>En breve uno de nuestros asesores se comunicará con usted para atender su solicitud.</p>
+              </div>
+            </div>
 
           </div>
           <a id="abre_tab2">

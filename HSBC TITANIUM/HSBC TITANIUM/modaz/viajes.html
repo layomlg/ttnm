@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es-MX" lang="es-MX"><!--<![endif]-->
+  <head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>HSBC Titanium</title>
+
+    <meta name="author" content="hsbc.com">
+
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" >
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
+
+    <!-- Colors -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors">
+
+    <!-- Animation Style -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/new-style.css">
+    <!--<link rel="stylesheet" type="text/css" href="stylesheets/work-cart.css">-->
+
+
+    <!-- Favicon and touch icons  -->
+    <link href="icon/favicon.png" rel="shortcut icon">
+
+    <!--[if lt IE 9]>
+<script src="javascript/html5shiv.js"></script>
+<script src="javascript/respond.min.js"></script>
+<![endif]-->
+  </head> 
+  <body class="header_sticky header-style-1 topbar-style-1 has-menu-extra">
+    <!-- Preloader -->
+    <div id="loading-overlay">
+      <div class="loader"></div>
+    </div>
+    <div id="loading-build">
+      <p class="uno">Estamos generando la mejor experiancia para usted</p>
+      <div class="loader-build"></div>
+      <p class="dos">Construyendo...</p>
+    </div>
+
+    <!-- Boxed -->
+    <div class="boxed">
+      <div id="site-header-wrap">
+        <!-- Top Bar -->
+        <!-- End Top Bar -->
+        <!-- Header -->
+        <header id="header" class="header header-container clearfix negativo">
+          <div class="container clearfix" id="site-header-inner">
+            <div id="logo" class="logo float-left">
+              <a href="index.html" title="logo">
+                <img id="logo-color" src="images/logo_hsbc_color.svg" alt="image" width="107" height="24" data-retina="images/logo_hsbc_color.svg" data-width="107" data-height="24">
+                <img id="logo-byc" src="images/logo_hsbc_bc.svg" alt="image2" width="107" height="24" data-retina="images/logo_hsbc_bc.svg" data-width="107" data-height="24">
+              </a>
+            </div><!-- /.logo -->
+            <div class="mobile-button"><span></span></div>
+            <ul class="menu-extra">
+              <li class="box-search">
+                <a class="icon_search header-search-icon" href="#"></a>
+                <form role="search" method="get" class="header-search-form" action="#">
+                  <input type="text" value="" name="s" class="header-search-field" placeholder="Búsqueda...">
+                  <button type="submit" class="header-search-submit" title="Búsqueda">Search</button>
+                </form>
+              </li>
+              <li class="box-login">
+                <a class="icon_login" href="#"></a>
+              </li>
+              <li class="box-cart nav-top-cart-wrapper">
+                <a class="icon_cart nav-cart-trigger active" href="#"><span>3</span></a>
+                <div class="nav-shop-cart">
+                  <div class="widget_shopping_cart_content">
+                    <div class="woocommerce-min-cart-wrap">
+                      <ul class="woocommerce-mini-cart cart_list product_list_widget ">
+                        <li class="woocommerce-mini-cart-item mini_cart_item">
+                          <span>Sin artículos en el carrito</span>
+                        </li>
+                      </ul>
+                    </div><!-- /.widget_shopping_cart_content -->
+                  </div>
+                </div><!-- /.nav-shop-cart -->
+              </li>
+            </ul><!-- /.menu-extra -->
+            <div class="nav-wrap">
+              <nav id="mainnav" class="mainnav">
+                <ul class="menu">
+                  <li>
+                    <a href="index.html">Virginia Castillo : 1'000,000 Puntos</a>
+                  </li>
+                </ul>
+              </nav><!-- /.mainnav -->
+            </div><!-- /.nav-wrap -->
+          </div><!-- /.container-fluid -->
+        </header><!-- /header -->
+      </div><!-- /#site-header-wrap -->
+
+      <!-- Calculadora -->
+      <div class="calculadora-container">
+
+
+        <div class="row frm-calc">
+          <div class="col-12">
+            <h3 class="title">Le ayudamos a seleccionar su mejor vuelo</h3>
+          </div>
+          <div class="col-sm-4">
+            <p class="input-group2">
+              <label>Origen</label>                                  
+              <input type="text" aria-required="true" size="30" value="" list="origen">
+              <datalist id="origen">
+                <option value="xxx Toronto-Aeropuerto Internacional Toronto Pearson">
+                <option value="xxx Montreal-Aeropuerto Internacional Pierre Elliott Trudeau">
+                <option value="xxx Los Ángeles-Aeropuerto Internacional de Los Ángeles">
+              </datalist>
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <p class="input-group2">
+              <label>Destino</label>                                  
+              <input type="text" aria-required="true" size="30" value="" list="destino">
+              <datalist id="destino">
+                <option value="xxx Toronto-Aeropuerto Internacional Toronto Pearson">
+                <option value="xxx Montreal-Aeropuerto Internacional Pierre Elliott Trudeau">
+                <option value="xxx Los Ángeles-Aeropuerto Internacional de Los Ángeles">
+              </datalist>
+            </p>
+          </div>
+          <div class="col-6 col-sm-2">
+            <label>Adultos</label>                                  
+            <div class="plus-box">
+              <!-- Change the `data-field` of buttons and `name` of input field's for multiple plus minus buttons-->
+              <div class="input-group plus-minus-input">
+                <div class="input-group-button">
+                  <button type="button" class=" btn mr-2 button hollow circle" data-quantity="minus" data-field="item1">
+                    -
+                  </button>
+                </div>
+                <input class="input-group-field" type="number" name="item1" value="2">
+                <div class="input-group-button">
+                  <button type="button" class=" btn ml-2 button hollow circle" data-quantity="plus" data-field="item1">
+                    +
+                  </button>
+                </div>
+              </div>
+              <!--MINUS PLUS END-->
+            </div>
+          </div>
+          <div class="col-6 col-sm-2">
+            <label>Niños</label>                                  
+            <div class="plus-box">
+              <!-- Change the `data-field` of buttons and `name` of input field's for multiple plus minus buttons-->
+              <div class="input-group plus-minus-input">
+                <div class="input-group-button">
+                  <button type="button" class=" btn mr-2 button hollow circle" data-quantity="minus" data-field="item1">
+                    -
+                  </button>
+                </div>
+                <input class="input-group-field" type="number" name="item1" value="0">
+                <div class="input-group-button">
+                  <button type="button" class=" btn ml-2 button hollow circle" data-quantity="plus" data-field="item1">
+                    +
+                  </button>
+                </div>
+              </div>
+              <!--MINUS PLUS END-->
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <p class="input-group2">
+              <label>Fecha de Ida</label>                                  
+            </p>
+
+            <div class="input-append date form_date">
+              <input size="16" type="text" value="" readonly>
+              <span class="add-on"><i class="icon-th"></i></span>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <p class="input-group2">
+              <label>Fecha de Regreso</label>                                  
+            </p>
+            <div class="input-append date form_date">
+              <input size="16" type="text" value="" readonly>
+              <span class="add-on"><i class="icon-th"></i></span>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <label>&nbsp;</label>  
+            <a class="btn-principal" onclick="cotizarViaje()">Buscar</a>
+          </div>
+        </div>
+        <div class="row animacion">
+
+          <div class="col-12">
+            <svg class="svg-calLoader" xmlns="http://www.w3.org/2000/svg" width="230" height="230">
+              <path class="cal-loader__path" d="M86.429 40c63.616-20.04 101.511 25.08 107.265 61.93 6.487 41.54-18.593 76.99-50.6 87.643-59.46 19.791-101.262-23.577-107.142-62.616C29.398 83.441 59.945 48.343 86.43 40z" fill="none" stroke="#FFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10 10 10 10 10 10 10 432" stroke-dashoffset="77"/>
+              <path class="cal-loader__plane" d="M141.493 37.93c-1.087-.927-2.942-2.002-4.32-2.501-2.259-.824-3.252-.955-9.293-1.172-4.017-.146-5.197-.23-5.47-.37-.766-.407-1.526-1.448-7.114-9.773-4.8-7.145-5.344-7.914-6.327-8.976-1.214-1.306-1.396-1.378-3.79-1.473-1.036-.04-2-.043-2.153-.002-.353.1-.87.586-1 .952-.139.399-.076.71.431 2.22.241.72 1.029 3.386 1.742 5.918 1.644 5.844 2.378 8.343 2.863 9.705.206.601.33 1.1.275 1.125-.24.097-10.56 1.066-11.014 1.032a3.532 3.532 0 0 1-1.002-.276l-.487-.246-2.044-2.613c-2.234-2.87-2.228-2.864-3.35-3.309-.717-.287-2.82-.386-3.276-.163-.457.237-.727.644-.737 1.152-.018.39.167.805 1.916 4.373 1.06 2.166 1.964 4.083 1.998 4.27.04.179.004.521-.076.75-.093.228-1.109 2.064-2.269 4.088-1.921 3.34-2.11 3.711-2.123 4.107-.008.25.061.557.168.725.328.512.72.644 1.966.676 1.32.029 2.352-.236 3.05-.762.222-.171 1.275-1.313 2.412-2.611 1.918-2.185 2.048-2.32 2.45-2.505.241-.111.601-.232.82-.271.267-.058 2.213.201 5.912.8 3.036.48 5.525.894 5.518.914 0 .026-.121.306-.27.638-.54 1.198-1.515 3.842-3.35 9.021-1.029 2.913-2.107 5.897-2.4 6.62-.703 1.748-.725 1.833-.594 2.286.137.46.45.833.872 1.012.41.177 3.823.24 4.37.085.852-.25 1.44-.688 2.312-1.724 1.166-1.39 3.169-3.948 6.771-8.661 5.8-7.583 6.561-8.49 7.387-8.702.233-.065 2.828-.056 5.784.011 5.827.138 6.64.09 8.62-.5 2.24-.67 4.035-1.65 5.517-3.016 1.136-1.054 1.135-1.014.207-1.962-.357-.38-.767-.777-.902-.893z" class="cal-loader__plane" fill="#f63440"/>
+            </svg>
+          </div>
+          <div class="col-12">
+            <p class="title">Su solicitud ha sido generada satisfactoriamente, uno de nuestros asesores se comunicará con usted para brindarle la mejor experiencia.</p>
+          </div>
+          <div class="offset-sm-8 col-sm-4">
+            <label>&nbsp;</label>  
+            <a class="btn-principal" onclick="cotizarOtroViaje()">Buscar</a>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- END CARRITO -->
+
+      <!-- Footer -->
+      <footer class="">
+        <div class="container footer-top">
+          <div class="row">
+            <div class="col-xs-6 col-sm-3">
+              <div class="footer-top-section">
+                <div class="icon-footer-top">
+                  <!-- <img src="assets/svg/heart.svg" alt=""> -->
+                </div>
+                <h4>Contacto HSBC</h4>
+                <a href="#">Llame a nuestro Centro de Atención &gt;</a>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+              <div class="footer-top-section">
+                <div class="icon-footer-top">
+                  <!-- <img src="assets/svg/heart.svg" alt=""> -->
+                </div>
+                <h4>Sucursales</h4>
+                <a href="#">Encuentre una sucursal &gt;</a>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+              <div class="footer-top-section">
+                <div class="icon-footer-top">
+                  <!-- <img src="assets/svg/heart.svg" alt=""> -->
+                </div>
+                <h4>Aclaraciones</h4>
+                <a href="#">En HSBC queremos escucharle &gt;</a>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+              <div class="footer-top-section">
+                <h4>Acerca de HSBC</h4>
+                <a href="#">Carreras, información de los medios de comunicación, inversionistas e información corporativa &gt;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" footer-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="footer-bottom-left">
+                  <a href="faqs.html">Preguntas frecuentes</a> <a href="tyc.html">Términos y condiciones</a> <a href="privacidad.html">Aviso de privacidad</a> <a href="#">Buró de entidades financieras</a> <a href="#">Programa Gremial de Educación Financiera</a>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="footer-bottom-right">
+                  <p><a href="#">Mapa del Sitio</a> © HSBC México 2019. Todos los Derechos Reservados<br>
+                    <a href="#">CONDUSEF</a> <a href="#">Derechos ARCO</a> <a href="#">Agencias y despachos de Cobranza</a> <a href="#">Consulta los Costos y las Comisiones de nuestros productos</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+      <!-- Go Top -->
+      <a class="go-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+
+
+      <div id="divDudas">
+        <a href="#" id="abre_tab">
+          <div id="tab" style="top: 496px;">
+            <div id="tab_interna">
+              <img id="imgDudas" src="images/dudas.png">
+            </div>
+          </div>
+        </a>
+
+        <!-- Panel oculto -->
+        <div id="panel" style="display: none;">
+          <div class="contenidoDudas">
+            <div class="row atender">
+              <div class="col-sm-12">
+                <h3>Bienvenido</h3>
+              </div>
+              <div class="col-sm-12">
+                <p>Si tienes alguna duda, ingresala en el campo de texto y con gusto te atenderemos</p>
+                <textarea></textarea>
+                <a href="#" class="btn-principal" onclick="atencion()">Enviar</a>
+              </div>
+              <div class="col-sm-12">
+                <p style="text-align: center">Ó</p>
+              </div>
+              <div class="col-sm-12">
+                <p>Presiona el botón para que uno de nuestros asesores se comunique contigo</p>
+                <a href="#" class="btn-principal" onclick="atencion()">Solicitar llamada de asesor</a>
+              </div>
+            </div>
+            <div class="row respuesta">
+              <div class="col-sm-12">
+                <h3>Muchas gracias por ponerte en contacto</h3>
+              </div>
+              <div class="col-sm-12">
+                <p>En breve uno de nuestros asesores se comunicará con usted para atender su solicitud.</p>
+              </div>
+            </div>
+
+          </div>
+          <a id="abre_tab2">
+            <div id="tab2" style="top: 496px;">
+              <div id="tab_interna2">
+                <img id="imgDudas2" src="images/dudas.png">
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>  
+
+    </div>
+
+    <!-- Javascript -->
+    <script src="javascript/jquery.min.js"></script>
+    <script src="javascript/tether.min.js"></script>
+    <script src="javascript/bootstrap.min.js"></script> 
+    <script src="javascript/jquery.easing.js"></script>    
+    <script src="javascript/parallax.js"></script>
+    <script src="javascript/jquery-waypoints.js"></script>
+    <script src="javascript/jquery-countTo.js"></script>
+    <script src="javascript/jquery.countdown.js"></script>
+    <script src="javascript/jquery.flexslider-min.js"></script>
+    <script src="javascript/images-loaded.js"></script>
+    <script src="javascript/jquery.isotope.min.js"></script>
+    <script src="javascript/magnific.popup.min.js"></script>
+    <script src="javascript/jquery.hoverdir.js"></script>
+    <script src="javascript/owl.carousel.min.js"></script>
+    <script src="javascript/equalize.min.js"></script>
+    <script src="javascript/gmap3.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIEU6OT3xqCksCetQeNLIPps6-AYrhq-s&region=GB"></script>
+    <script src="javascript/jquery-ui.js"></script>
+
+    <script src="javascript/jquery.cookie.js"></script>
+    <script src="javascript/main.js"></script>
+
+    <!-- Revolution Slider -->
+    <script src="rev-slider/js/jquery.themepunch.tools.min.js"></script>
+    <script src="rev-slider/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="javascript/rev-slider.js"></script>
+    <!-- Load Extensions only on Local File Systems ! The following part can be removed on Server for On Demand Loading -->  
+    <script src="rev-slider/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="rev-slider/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="rev-slider/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="rev-slider/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="rev-slider/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="rev-slider/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="rev-slider/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="rev-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="rev-slider/js/extensions/revolution.extension.video.min.js"></script>
+    <script type="text/javascript" src="javascript/bootstrap-datetimepicker.min.js" charset="UTF-8"></script>
+    <script>
+      $(document).ready(function () {
+        $('#abre_tab').click(function () {
+          $('#panel').show();
+        });
+        $('#abre_tab2').click(function () {
+          $('#panel').hide();
+        });
+        $('#logo-byc').attr("src","./images/logo_hsbc_bc.svg");
+        //$('#modal-tyc').modal();
+        //$('#modal-onboarding').modal();
+      });
+
+      $(document).ready(function () {
+        var id=1;
+        $('.next').click(function () {
+          $('.step.step1').fadeOut();
+          $('.step.step2').fadeIn();
+        });
+      });
+
+      //$('p.chkbx input+label').click(function () {
+      //  $(this).parent().children("input").click();
+      //});
+
+      function cotizarViaje(){
+        $('.frm-calc').toggle();
+        $('.animacion').fadeIn();
+      }
+      function cotizarOtroViaje(){
+        $('.frm-calc').fadeIn();
+        $('.animacion').toggle();
+      }
+    </script>
+
+    <script type="text/javascript">
+
+      $('.form_date').datetimepicker({
+        format: "dd MM yyyy",
+        language:  'es',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+      });
+    </script> 
+  </body> 
+</html>                               

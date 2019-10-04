@@ -88,8 +88,31 @@
     url("../fonts/w01/UniversNextforHSBCW01-UtLtI.ttf") format("truetype"),
     url("../fonts/w01/UniversNextforHSBCW01-UtLtI.svg") format("svg");
 }
-*:not(.fa){
+*:not(.fa , .glyphicon ){
   font-family: "Univers" ,Arial, "Helvetica Neue", Helvetica, sans-serif!important;
+}
+textarea, 
+input[type="text"],
+input[type="submit"],
+input[type="password"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="date"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="number"], 
+input[type="email"], 
+input[type="url"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="color"], 
+.uneditable-input,
+.dropdown-menu,
+.navbar .nav > .active > a, 
+.navbar .nav > .active > a:hover, 
+.navbar .nav > .active > a:focus {
+  color: #333;
 }
 
 body{
@@ -360,6 +383,17 @@ footer a:hover{
 .overlay-effect > .block.b4{
   top:50%;
   left: 50%;
+}
+
+.elm-btn > .block{
+  cursor: pointer;
+  color:#333;
+  padding: 4px;
+  margin: 10px 0px
+}
+.elm-btn > .block:hover{
+  background-color: #f63440;
+  color:#FFF;
 }
 
 .overlay-effect > .block > span{
@@ -644,15 +678,28 @@ h2.rojoTexto {
   text-align: center;
   margin-top: 10px;
 }
+.product-detail .inmediato {
+  font-size: 14px;
+  line-height: 35px;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  color: #FFFFFF;
+  margin: 15px 0px;
+  padding: 0px 20px;
+  background-color: #333;
+  border: 1px solid #333;
+}
 .product .product-item .inmediato {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 35px;
   width: 135px;
   text-align: center;
   display: block;
   position: absolute;
-  top: 27px;
-  left: 25px;
+  top: 10px;
+  left: 19px;
   color: #FFFFFF;
   background-color: #f63440;
   border: 1px solid #f63440;
@@ -700,6 +747,7 @@ h2.rojoTexto {
   margin: 30px auto;
   padding: 0px 15px;
 }
+
 .cart-producto {
   position: relative;
   min-height: 170px;
@@ -864,10 +912,10 @@ a.btn-secundario.next2{
 }
 
 #modal-onboarding > div > div > div.modal-body > div.step > div > div > p > label {
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-    margin: 5px 0px 15px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin: 5px 0px 15px;
 }
 #modal-onboarding > div > div > div.modal-body > div.step > div > div > img{
   display: block;
@@ -881,4 +929,284 @@ a.btn-secundario.next2{
 #modal-onboarding > div > div > div.modal-body > div.step > div > div > img:hover{
   border: 10px solid #333;
   opacity: 1;
+}
+
+/*CART*/
+.calculadora-container{
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 30px 15px;
+  border: 10px solid #f63440;
+  background-image: url("../images/fondo2-min.jpg");
+  border-radius: 20px;;
+}
+.calculadora-container .animacion{
+  display: none;
+}
+.calculadora-container label {
+  color: #FFF;
+}
+.calculadora-container .title {
+  color: #FFF;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+input[type="number"]{
+  color: #FFF;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.datetimepicker.datetimepicker-dropdown-bottom-right.dropdown-menu{
+  width: 300px;
+}
+.datetimepicker.datetimepicker-dropdown-bottom-right.dropdown-menu > div  .table-condensed{
+  width: 100%;
+}
+div.datetimepicker-days > table > thead > tr:nth-child(2) > th{
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+.datetimepicker table tr td.active:active, .datetimepicker table tr td.active:hover:active, .datetimepicker table tr td.active.disabled:active, .datetimepicker table tr td.active.disabled:hover:active, .datetimepicker table tr td.active.active, .datetimepicker table tr td.active:hover.active, .datetimepicker table tr td.active.disabled.active, .datetimepicker table tr td.active.disabled:hover.active {
+  background-color: #f63440;
+}
+
+.datetimepicker table tr td.active, .datetimepicker table tr td.active:hover, .datetimepicker table tr td.active.disabled, .datetimepicker table tr td.active.disabled:hover {
+  background-color: #f63440;
+  background-image: -moz-linear-gradient(top,#f63440,#f63440);
+  background-image: -ms-linear-gradient(top,#f63440,#f63440);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#f63440),to(#f63440));
+  background-image: -webkit-linear-gradient(top,#f63440,#f63440);
+  background-image: -o-linear-gradient(top,#f63440,#f63440);
+  background-image: linear-gradient(to bottom,#f63440,#f63440);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f63440',endColorstr='#f63440',GradientType=0);
+  border-color: #f63440 #f63440 ##f63440;
+  border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+}
+.datetimepicker table tr td span.active:active, .datetimepicker table tr td span.active:hover:active, .datetimepicker table tr td span.active.disabled:active, .datetimepicker table tr td span.active.disabled:hover:active, .datetimepicker table tr td span.active.active, .datetimepicker table tr td span.active:hover.active, .datetimepicker table tr td span.active.disabled.active, .datetimepicker table tr td span.active.disabled:hover.active {
+  background-color: #f63440;
+}
+.datetimepicker table tr td span.active, .datetimepicker table tr td span.active:hover, .datetimepicker table tr td span.active.disabled, .datetimepicker table tr td span.active.disabled:hover {
+  background-color: #f63440;
+  background-image: -moz-linear-gradient(top,#f63440,#f63440);
+  background-image: -ms-linear-gradient(top,#f63440,#f63440);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#f63440),to(#f63440));
+  background-image: -webkit-linear-gradient(top,#f63440,#f63440);
+  background-image: -o-linear-gradient(top,#f63440,#f63440);
+  background-image: linear-gradient(to bottom,#f63440,#f63440);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f63440',endColorstr='#f63440',GradientType=0);
+  border-color: #f63440 #f63440 ##f63440;
+  border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+}
+.datetimepicker table tr td span:hover,
+.datetimepicker table tr td.day:hover {
+  background: #333;
+  color: #FFF;
+  cursor: pointer;
+}
+/***/
+
+.svg-calLoader {
+  width: 230px; height: 230px;
+  transform-origin: 115px 115px;
+  animation: 2.1s linear infinite loader-spin;
+  display: block;
+  margin: 10px auto
+}
+
+.cal-loader__plane { fill: $c-hilight; }
+.cal-loader__path { stroke: $c-front; animation: 2.1s ease-in-out infinite loader-path; }
+
+@keyframes loader-spin {
+  to{
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader-path {
+  0%{
+    stroke-dasharray:  0, 580, 0, 0, 0, 0, 0, 0, 0;
+  }
+  50%{
+    stroke-dasharray: 0, 450, 10, 30, 10, 30, 10, 30, 10;
+  }
+  100%{
+    stroke-dasharray: 0, 580, 0, 0, 0, 0, 0, 0, 0;
+  }
+}
+/***/
+.flat-image-box.style-1 .thumb {
+  position: relative;
+}
+.flat-image-box.style-1 .elm-btn {
+  position: relative;
+  display: block;
+  margin: 10px auto;
+  top: 0%;
+  left: 0%;
+  transform: translate(0%,0%);
+  z-index: 2;
+  text-align: center;
+}
+a.themesflat-button.bg-white.width-150{
+  border: 1px solid #f63440;
+}
+.flat-image-box.style-1 .thumb {
+  position: relative;
+}
+.seis{
+  font-size: 36px; 
+  color: #f63440;
+}
+.msi{
+  font-size: 36px;
+}
+@media only screen and (min-width: 768px){
+  .cart-producto {
+    width: 50%;
+    float: left;
+    padding: 0px 15px;
+  }
+}
+
+
+.btn-flash {
+  background-color: #004A7F;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+@-webkit-keyframes glowing {
+  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+@keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+.contenidoDudas .btn-principal{
+  display: inline-block;
+  margin: 0px auto 15px;
+  width: auto;
+  position: relative;
+  float: right;
+}
+.respuesta{
+  display: none;
+}
+.perfil-container{
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0px 15px;
+}
+.datos-Perfil{
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0px 15px;
+}
+.redenciones-container{
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0px 15px;
+}
+
+.cards-hsbc-box {
+  background-color: #dedede;
+  padding: 20px 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.owl-carousel.carousel-hsbc-cards .item .carousel-card-img {
+  margin: 20px auto;
+  max-width: 240px;
+}
+
+@media only screen and (min-width: 768px){
+  .cart-producto {
+    width: 33%;
+    float: left;
+    padding: 0px 15px;
+  }
+}
+
+
+div.tabla{
+  width: 100%;
+  margin: 30px 0px;
+}
+div.tabla table{
+  width: 100%;
+}
+div.tabla table th{
+  font-weight: bold;
+}
+div.tabla table tbody tr:nth-child(2n){
+  background-color: rgba(0,0,0,0.1);
+  padding: 20px;
+}
+div.tabla table tbody tr:nth-child(2n+1){
+  background-color: transparent;
+  padding: 20px;
+}
+div.tabla table tr th{
+  background-color: #f63440;
+  color: #ffffff;
+  text-align: center;
+}
+div.tabla table tr td{
+  padding: 20px;
+  text-align: center;
+}
+div.tabla table img{
+  max-width:  150px;
+}
+
+.f-r {
+  float: right;
+}
+.product-detail .product-categories span, .product-detail .product-tags span {
+  color: #333;
+  font-weight: 400;
 }

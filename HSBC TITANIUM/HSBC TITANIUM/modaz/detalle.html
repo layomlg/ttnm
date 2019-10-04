@@ -181,6 +181,7 @@
                       <li><span>Selfies en cámara lenta</span></li>
                       <li><span>Resistencia al agua al doble de profundidad</span></li>
                     </ul>
+                    <span class="inmediato">Este artículo cuenta con envío inmediato</span>
                     <div class="product-quantity">
                       <div class="quantity">
                         <input type="text" value="1" name="quantity-number" class="quantity-number">
@@ -192,7 +193,7 @@
                       </div>
 
                       <div class="add-to-cart express">
-                        <a href="#">Envío express</a>
+                        <a href="#" data-toggle="modal" data-target="#envioMdl">Envío express</a>
                       </div>
                       <div class="box-like">
                         <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
@@ -202,7 +203,7 @@
                       <div>
                         <p class="chkbx clearfix">
                           <input type="checkbox" name="check-meses" id="check-meses">
-                          <label for="check-meses">6 meses sin intereses</label>
+                          <label for="check-meses"><span class="seis">6</span><span class="msi">MSI</span> </label>
                         </p>
                       </div>
                       <div>
@@ -495,47 +496,31 @@
         <!-- Panel oculto -->
         <div id="panel" style="display: none;">
           <div class="contenidoDudas">
-            <p>
-              <span class="rojoTexto">+</span>
-              <span id="Label6" style="color: #333;">CENTRO DE CONTACTO</span><span class="rojoTexto"> HSBC</span>
-            </p>
-            <p>...........................................................................................</p>
-            <span class="glyphicon glyphicon-earphone rojoTexto"></span>
-            <p>
-              <span>
-                <span id="Label8" class="rojoTexto">Centro de Servicio del Programa</span></span> HSBC <span>
-              <span id="Label7" class="rojoTexto">+PUNTOS</span></span>
-            </p>
-            <p>
-              <span id="Label9" style="color: #333;">Ciudad de México y Área Metropolitana 5809-7404</span>
-            </p>
-            <p>
-              <span id="Label10" style="color: #333;">Lada  01 55 58 09 74 04</span>
-            </p>
-            <p>
-              <span id="Label11" style="color: #333;">Horario de Atención</span>
-            </p>
-            <p>
-              <span id="Label11_1" style="position: relative; left: 35px; color: #333;">Lunes a Viernes de 8:00 hrs a 20:00 hrs.</span>
-            </p>
-            <p>
-              <span id="Label11_2" style="position: relative; left: 35px; color: #333;">Sábados y Domingos de 9:00 hrs a 18:00 hrs.</span>
-            </p>
-            <p>...........................................................................................</p>
-            <span class="glyphicon glyphicon-earphone rojoTexto"></span>
-            <p>
-              <span>
-                <span id="Label12" class="rojoTexto">Centro de Contacto</span></span> HSBC
-            </p>
-            <p>
-              <span id="Label14" style="color: #333;">Ciudad de México y Área Metropolitana 5721-3390</span>
-            </p>
-            <p>
-              <span id="Label15" style="color: #333;">Desde el Interior 01 55 57 21 33 90</span>
-            </p>
-            <p>
-              <span id="Label16" style="color: #333;">Horario de Atención 24 hrs.</span>
-            </p>
+            <div class="row atender">
+              <div class="col-sm-12">
+                <h3>Bienvenido</h3>
+              </div>
+              <div class="col-sm-12">
+                <p>Si tienes alguna duda, ingresala en el campo de texto y con gusto te atenderemos</p>
+                <textarea></textarea>
+                <a href="#" class="btn-principal" onclick="atencion()">Enviar</a>
+              </div>
+              <div class="col-sm-12">
+                <p style="text-align: center">Ó</p>
+              </div>
+              <div class="col-sm-12">
+                <p>Presiona el botón para que uno de nuestros asesores se comunique contigo</p>
+                <a href="#" class="btn-principal" onclick="atencion()">Solicitar llamada de asesor</a>
+              </div>
+            </div>
+            <div class="row respuesta">
+              <div class="col-sm-12">
+                <h3>Muchas gracias por ponerte en contacto</h3>
+              </div>
+              <div class="col-sm-12">
+                <p>En breve uno de nuestros asesores se comunicará con usted para atender su solicitud.</p>
+              </div>
+            </div>
 
           </div>
           <a id="abre_tab2">
@@ -549,7 +534,37 @@
 
       </div>  
 
+
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="envioMdl" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img class="logo-color" src="images/logo_hsbc_color.svg" alt="image" width="107" height="24" data-retina="images/logo_hsbc_color.svg" data-width="107" data-height="24">
+            <h2 class="rojoTexto">Envío express</h2>
+          </div>
+          <div class="modal-body">
+
+
+
+            <div id="MainContent_divContenedor" style="text-align: justify;">
+              <br>
+              <p>En caso de adquirir tu artículo, este será enviado dentro de los próximos XX días</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p class="chkbx clearfix">
+              <input type="checkbox" name="check-meses" id="check-meses">
+            </p>
+            <a data-dismiss="modal" class="btn-principal">Aceptar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
     <!-- Javascript -->
     <script src="javascript/jquery.min.js"></script>
